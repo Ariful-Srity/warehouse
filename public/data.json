@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "Name": "Honda",
+        "Quantity": 3,
+        "Supplier": "Honda Store",
+        "Price": 20000,
+        "Details": "This is a Brand new bike.This is also popular bike",
+        "img": "https://i.ibb.co/sH7DBm7/bike-Item1.webp"
+    },
+    {
+        "id": 2,
+        "Name": "TVS Bike",
+        "Quantity": 5,
+        "Price": 2000,
+        "Supplier": "TVS Store",
+        "Details": "This is a pre-paid Service.You have to fill up a form for that.After full fill All the requirement this services will be given",
+        "img": "https://i.ibb.co/mDCQGQt/bike-Item2.webp"
+    },
+    {
+        "id": 3,
+        "Name": "BAZAZ PLATINA",
+        "Quantity": 3,
+        "Price": 1000,
+        "Supplier": "Bazaz Store",
+        "Details": "This is a pre-paid Service.You have to fill up a form for that.After full fill All the requirement this services will be given",
+        "img": "https://i.ibb.co/zry5WX6/bike-Item3.webp"
+    },
+    {
+        "id": 4,
+        "Name": "Suzuki",
+        "Quantity": 2,
+        "Supplier": "Suzuki Store",
+        "Price": 500,
+        "Details": "This is a pre-paid Service.You have to fill up a form for that.After full fill All the requirement this services will be given",
+        "img": "https://i.ibb.co/47k1rZd/bike-Item4.webp"
+    },
+    {
+        "id": 5,
+        "Name": "Apachy",
+        "Quantity": 3,
+        "Supplier": "Apachy Store",
+        "Price": 300,
+        "Details": "This is a pre-paid Service.You have to fill up a form for that.After full fill All the requirement this services will be given",
+        "img": "https://i.ibb.co/dMwm7fq/bike-Item5.webp"
+    },
+    {
+        "id": 6,
+        "Price": 200,
+        "Name": "RTR",
+        "Supplier": "RTR STORE",
+        "Quantity": 5,
+        "Details": "This is a pre-paid Service.You have to fill up a form for that.After full fill All the requirement this services will be given",
+        "img": "https://i.ibb.co/sqvh3R8/bike-Item6.webp"
+    }
+]

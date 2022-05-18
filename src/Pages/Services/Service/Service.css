@@ -1,0 +1,17 @@
+.service {
+    border-radius: 15px;
+
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.service:hover {
+    background-color: rgb(228, 136, 31);
+
+
+
+}

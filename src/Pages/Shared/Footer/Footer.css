@@ -1,0 +1,33 @@
+.container1 {
+    background-color: black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .container1 {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 150px;
+    }
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .container1 {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+}
