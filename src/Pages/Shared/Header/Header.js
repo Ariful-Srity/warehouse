@@ -7,15 +7,13 @@ import { signOut } from 'firebase/auth';
 import './Header.css'
 
 const Header = () => {
-
     const [user] = useAuthState(auth);
-
+    if (user) {
+        console.log('user', user);
+    }
     const handleSignOut = () => {
         signOut(auth);
     }
-
-
-
 
     return (
         <>
@@ -34,19 +32,16 @@ const Header = () => {
                         </Nav>
                         <Nav>
 
-                            <Nav.Link as={Link} eventKey={2} to="register">
+                            {!user && <Nav.Link as={Link} eventKey={2} to="register">
                                 Register
-                            </Nav.Link>
+                            </Nav.Link>}
                         </Nav>
-
-
 
                         <Nav>
 
                             {
                                 user ?
                                     <>
-
                                         <Nav.Link as={Link} to="manageitems">
                                             Manage Items
                                         </Nav.Link>
@@ -57,10 +52,13 @@ const Header = () => {
                                             My items
                                         </Nav.Link>
 
-                                        <button className='btn btn-link text-white text-decoration-none bg-dark ' onClick={handleSignOut}>Log out</button>
+                                        {user && <div className="d-flex align-items-center text-white">
+                                            <span>{user.displayName}</span>
+                                            <button className='btn btn-link text-white text-decoration-none bg-dark ' onClick={handleSignOut}>Log out</button>
+                                        </div>}
                                     </>
                                     :
-                                    <Nav.Link as={Link} to="login">
+                                    <Nav.Link className="text-white" as={Link} to="login">
                                         Login
                                     </Nav.Link>}
                         </Nav>

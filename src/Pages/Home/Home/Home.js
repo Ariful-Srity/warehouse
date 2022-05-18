@@ -17,7 +17,7 @@ const Home = () => {
                 <Carousel>
                     <Carousel.Item>
                         <img style={{ height: "400px" }}
-                            className="d-block w-100 "
+                            className="d-block w-75 mx-auto "
                             src={banner1}
                             alt="First slide"
                         />
@@ -29,7 +29,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             style={{ height: "400px" }}
-                            className="d-block w-100 height-100"
+                            className="d-block w-75 mx-auto"
                             src={banner2}
                             alt="Second slide"
                         />
@@ -42,7 +42,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             style={{ height: "400px" }}
-                            className="d-block w-100"
+                            className="d-block w-75 mx-auto"
                             src={banner3}
                             alt="Third slide"
                         />
@@ -55,7 +55,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             style={{ height: "400px" }}
-                            className="d-block w-100"
+                            className="d-block w-75 mx-auto"
                             src={banner4}
                             alt="Third slide"
                         />
@@ -68,7 +68,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             style={{ height: "400px" }}
-                            className="d-block w-100"
+                            className="d-block w-75 mx-auto"
                             src={banner5}
                             alt="Third slide"
                         />
@@ -81,7 +81,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             style={{ height: "400px" }}
-                            className="d-block w-100"
+                            className="d-block w-75 mx-auto"
                             src={banner6}
                             alt="Third slide"
                         />
