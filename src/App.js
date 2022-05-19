@@ -14,6 +14,7 @@ import AddItems from './Pages/AddItems/AddItems';
 import MyItems from './Pages/MyItems/MyItems';
 import Update from './Pages/Update/Update';
 import Notfound from './Pages/Shared/NotFound/Notfound';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           </RequireAuth>
         }></Route>
 
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
 
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>

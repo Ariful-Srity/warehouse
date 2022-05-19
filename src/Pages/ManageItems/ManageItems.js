@@ -29,7 +29,7 @@ const ManageItems = () => {
     }
     return (
         <div className='w-75 mx-auto'>
-            <h2 className='text-center mt-3'>Manage Items</h2>
+            <h2 className='text-center mt-3'>Manage Items ({services?.length})</h2>
             <Table striped bordered hover variant="dark">
                 <thead className='text-center'>
                     <tr>
