@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "_id": "jkshjkahjkhajhfj",
         "Name": "Honda",
         "Quantity": 3,
         "Supplier": "Honda Store",
@@ -9,7 +9,7 @@
         "img": "https://i.ibb.co/sH7DBm7/bike-Item1.webp"
     },
     {
-        "id": 2,
+        "_id": "ahfkjhasjkdfhjaksdhfjk",
         "Name": "TVS Bike",
         "Quantity": 5,
         "Price": 2000,
@@ -18,7 +18,7 @@
         "img": "https://i.ibb.co/mDCQGQt/bike-Item2.webp"
     },
     {
-        "id": 3,
+        "_id": "jakhjkahsdfjhasdfjhaf",
         "Name": "BAZAZ PLATINA",
         "Quantity": 3,
         "Price": 1000,
@@ -27,7 +27,7 @@
         "img": "https://i.ibb.co/zry5WX6/bike-Item3.webp"
     },
     {
-        "id": 4,
+        "_id": "aidfouiaxcvkjaf",
         "Name": "Suzuki",
         "Quantity": 2,
         "Supplier": "Suzuki Store",
@@ -36,7 +36,7 @@
         "img": "https://i.ibb.co/47k1rZd/bike-Item4.webp"
     },
     {
-        "id": 5,
+        "_id": "klacoquewfijqhfjh",
         "Name": "Apachy",
         "Quantity": 3,
         "Supplier": "Apachy Store",
@@ -45,7 +45,7 @@
         "img": "https://i.ibb.co/dMwm7fq/bike-Item5.webp"
     },
     {
-        "id": 6,
+        "_id": "kzjacioqwjfjncadsicvuyh",
         "Price": 200,
         "Name": "RTR",
         "Supplier": "RTR STORE",

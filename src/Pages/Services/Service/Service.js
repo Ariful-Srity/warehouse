@@ -1,18 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
-
-    const { id, Name, Details, img, Price, Quantity, Supplier } = service;
-    const navigate = useNavigate();
-
-    const navigateToServiceDetails = id => {
-        navigate('/manageInventory')
-    }
-
-
+    const { _id, Name, Details, img, Price, Quantity, Supplier } = service;
 
     return (
         <div className="service  " >
@@ -27,7 +19,7 @@ const Service = ({ service }) => {
                     <h4 >Quantity:<span className="text-warning ps-2">{Quantity}</span></h4>
                     <h4 >Supplier:<span className="text-warning ps-2">{Supplier}</span></h4>
 
-                    <button onClick={() => navigateToServiceDetails(id)} className='btn btn-primary'> Stock Update</button>
+                    <Link to={`/inventory/${_id}`} className='btn btn-primary'> Stock Update</Link>
 
 
                 </Card.Body>

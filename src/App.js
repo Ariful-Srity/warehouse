@@ -9,10 +9,11 @@ import Services from './Pages/Services/Services/Services';
 import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import ManageItems from "./Pages/ManageItems/ManageItems";
 import AddItems from './Pages/AddItems/AddItems';
 import MyItems from './Pages/MyItems/MyItems';
+import Update from './Pages/Update/Update';
+import Notfound from './Pages/Shared/NotFound/Notfound';
 
 function App() {
   return (
@@ -24,16 +25,29 @@ function App() {
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
-        <Route path="/manageitems" element={<ManageItems></ManageItems>}></Route>
-        <Route path="/AddItems" element={<AddItems></AddItems>}></Route>
-        <Route path="/MyItems" element={<MyItems></MyItems>}></Route>
-        <Route path="/manageInventory" element={
+        <Route path="/manageitems" element={
           <RequireAuth>
-            <ManageInventory></ManageInventory>
+            <ManageItems></ManageItems>
+          </RequireAuth>
+        }></Route>
+        <Route path="/addItem" element={
+          <RequireAuth>
+            <AddItems></AddItems>
+          </RequireAuth>
+        }></Route>
+        <Route path="/MyItems" element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
+        <Route path='/inventory/:id' element={
+          <RequireAuth>
+            <Update></Update>
           </RequireAuth>
         }></Route>
 
 
+        <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

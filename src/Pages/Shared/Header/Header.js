@@ -9,7 +9,7 @@ import './Header.css'
 const Header = () => {
     const [user] = useAuthState(auth);
     if (user) {
-        console.log('user', user);
+        // console.log('user', user);
     }
     const handleSignOut = () => {
         signOut(auth);
@@ -26,8 +26,6 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="Services" id='Services' className="text-white ">Services</Nav.Link>
                             <Nav.Link as={Link} to="Blogs" id='Blogs' className="text-white ">Blogs</Nav.Link>
-                            <Nav.Link as={Link}
-                                to="About">About</Nav.Link>
 
                         </Nav>
                         <Nav>
@@ -42,10 +40,10 @@ const Header = () => {
                             {
                                 user ?
                                     <>
-                                        <Nav.Link as={Link} to="manageitems">
+                                        <Nav.Link as={Link} to="/manageitems">
                                             Manage Items
                                         </Nav.Link>
-                                        <Nav.Link as={Link} to="AddItem">
+                                        <Nav.Link as={Link} to="/addItem">
                                             Add Item
                                         </Nav.Link>
                                         <Nav.Link as={Link} to="MyItems">

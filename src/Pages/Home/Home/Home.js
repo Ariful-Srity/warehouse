@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-
 import banner1 from '../../Images/bike1.jpg'
 import banner2 from '../../Images/bike2.jpg'
 import banner3 from '../../Images/bike3.jpg'

@@ -1,37 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useServices from '../../../hooks/useServices';
 import Service from '../Service/Service';
 import './Services.css'
 const Services = () => {
-    const [services, setServices] = useState([]);
-    useEffect(() => {
-
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setServices(data));
-
-
-
-    }, [])
-
-
-
+    const [services] = useServices();
     return (
         <div>
-            <h1 className="text-center  text-warning mb-5 mt-5">Inventory Items:</h1>
+            <h1 className="text-center  text-warning mb-5 mt-5">Inventory Items</h1>
             <div className="services">
-
                 {
-
                     services.map(service => <Service
-                        key={service.id}
+                        key={service._id}
                         service={service}
-
                     ></Service>)
-
-
                 }
-
-
             </div>
         </div>
     );
