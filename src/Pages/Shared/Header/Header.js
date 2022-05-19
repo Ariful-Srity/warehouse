@@ -9,7 +9,7 @@ import './Header.css'
 const Header = () => {
     const [user] = useAuthState(auth);
     if (user) {
-        // console.log('user', user);
+        console.log('user', user);
     }
     const handleSignOut = () => {
         signOut(auth);
