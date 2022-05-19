@@ -18,7 +18,7 @@ const ManageItems = () => {
                 method: 'delete'
             })
                 .then(res => res.json())
-                .tehn(data => {
+                .then(data => {
                     if (data.deletedCount > 0) {
                         const remaining = services.filter(service => service._id !== _id);
                         setServices(remaining);

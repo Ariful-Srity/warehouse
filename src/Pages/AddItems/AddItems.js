@@ -15,7 +15,19 @@ const AddItems = () => {
         const img = event.target.img.value;
         const Supplier = user?.displayName;
         const newItem = { Name, Quantity, Price, Details, img, Supplier };
-        console.log(newItem)
+
+        fetch('http://localhost:5000/services', {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newItem)
+        })
+            .then(res => res.json())
+            .then(() => {
+                alert("Item added!");
+                event.target.reset();
+            })
     }
     return (
         <div className='w-50 mx-auto'>
